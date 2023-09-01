@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stile.css">
+
+
+    <title>Spotify</title>
+</head>
+
+<body>
+    <div class="contenedor">
+        <div class="container">
+            <div class="img">
+                <img src="images/cover.png">
+            </div>
+
+            <div class="reproducir">
+                <div class="text">
+                    <h1>Album Rock</h1>
+                    <h2>Track 01 - Song Rock</h2>
+                </div>
+                
+                <div class="button">
+                    <button class="play" onclick="play()"><img src="images/btn-play.svg"></button>
+                    <button class="pause" onclick="pause()"><img src="images/btn-pause.svg"></button>
+                    <button class="volumen" onclick="volumen()"><img src="images/btn-volume.svg">
+                        <div class="barra-volum" id="volum">
+                            <div class="punto-volum"></div>
+                         </div>
+                    
+                    </button>
+                </div>
+
+                <div class="audio" id="barra">
+                    <div class="punto" id="progreso"></div>
+                <audio src="audio/sample.mp3" id="audio"></audio>
+                </div>
+
+            </div>
+            
+        </div>
+    </div>
+    <script src="js/funcion.js"></script>
+</body>
+
+</html>

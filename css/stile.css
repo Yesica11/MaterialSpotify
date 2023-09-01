@@ -1,0 +1,173 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url("../fonts/Poppins-Light.ttf");
+}
+
+body, html {
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+    background-color:black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Poppins;
+
+}
+/*Contendeor principal*/
+.contenedor {
+    background-color:#e1dac6;
+    width: 660px;
+    height: 302px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Contendeor 2, que engloba todo*/
+.container {
+    background-color:#726f59;
+    width: 500px;
+    height: 200px;
+    border-radius: 20px;
+    align-items: center;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+}
+
+.img {
+    display: flex;
+    align-items: center;
+    margin: 0 30px 0 20px;
+}
+
+.img img{
+    width: 160px;
+    height: 160px;
+}
+
+/*Contenerdor que engloba las funcones de los botones*/
+.reproducir {
+    padding-top: 17px;
+    margin-bottom: 33px;
+}
+
+.text {
+   margin-bottom: 19px;
+}
+
+.text h1{
+    color: #c7c1ad;
+    font-weight:1;
+    font-size: 20px;
+}
+
+.text h2{
+    color:#9b9681;
+    font-size: 16px;
+    font-weight: 1;
+}
+
+/*Funcionalidad de los button*/
+.button{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.button button {
+    background: transparent;
+    border: none;
+    cursor:pointer;
+    width: 60px;
+    height: 60px;
+}
+
+.play {
+    transition: transform 0.2s ease;
+}
+
+.play:hover {
+    transform: scale(1.2);
+}
+
+.pause {
+    transition: transform 0.2s ease;
+}
+
+.pause:hover {
+    transform: scale(1.2);
+}
+
+.volumen {
+    transition: transform 0.2s ease;
+}
+
+.volumen:hover {
+    transform: scale(1.2);
+}
+
+/*Barra y circulo de volumen*/
+.barra-volum  {
+    background-color:#e1dac6;
+    width: 60px;
+    height: 10px;
+    position: absolute;
+    left: 60px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 5px;
+    visibility: hidden;
+}
+
+.volumen {
+    position: relative;
+}
+
+.volumen:hover .barra-volum{
+    visibility: visible;
+}
+
+.punto-volum {
+    background-color:#e1dac6;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 84%;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 20px;
+    transition: left .2s ease;
+}
+
+
+/*Diseño de las barras de volumen-circulo de reproducion del sonido*/
+.audio {
+    background: #e1dac6;
+    margin-top: 10px;
+    width: 262px;
+    height: 7px;
+    display: flex;
+    align-items: center;
+    border-radius: 3px;
+    cursor: pointer;
+   
+}
+
+.punto {
+    position: relative;
+    background-color:#e1dac6;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    transition: left .2s ease;
+}
+
